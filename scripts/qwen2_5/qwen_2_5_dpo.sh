@@ -15,14 +15,14 @@
 # limitations under the License.
 # ==============================================================================
 
+MODEL_NAME_OR_PATH="/mnt/file2/models2/Qwen2.5-0.5B-Instruct"  # 模型绝对路径
 
-MODEL_NAME_OR_PATH="Qwen/Qwen2.5-0.5B-Instruct" # model path
+TRAIN_DATASETS="/mnt/file2/shiyi/homework2/local_dir"          # 训练数据绝对路径
 
-TRAIN_DATASETS="../assets/text_to_text/preference" # dpo dataset path
-TRAIN_TEMPLATE="PKUSafeRLHF" # dataset template
-TRAIN_SPLIT="train" # split the dataset
+TRAIN_TEMPLATE="PKUSafeRLHF"
+TRAIN_SPLIT="train"
 
-OUTPUT_ROOT_DIR=$OUTPUT_ROOT_DIR
+OUTPUT_ROOT_DIR="/mnt/file2/shiyi/homework2/outputs"  
 
 if [ -z "$OUTPUT_ROOT_DIR" ]; then
     echo "OUTPUT_ROOT_DIR is not set"
