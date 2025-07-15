@@ -35,7 +35,7 @@ OUTPUT_DIR="${OUTPUT_ROOT_DIR}/qwen_2_5_dpo" # output dir
 export WANDB_API_KEY=""
 
 # Source the setup script
-source /home/shiyi/align-anything/setup.sh
+# source /home/shiyi/align-anything/setup.sh
 
 
 # Execute deepspeed command
